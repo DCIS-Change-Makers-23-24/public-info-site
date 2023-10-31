@@ -7,8 +7,13 @@
   height: 92vh;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.homePage1 .header {
+  text-align: center;
 }
 
 .homePage1 .cardContainer {

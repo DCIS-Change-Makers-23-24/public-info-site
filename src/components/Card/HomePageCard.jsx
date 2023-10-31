@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './HomePageCard.module.css'
 
-const HomePageCard = () => {
+const HomePageCard = ({ title, desc }) => {
     return (
         <div className={styles.homePageCardContainer}>
         <div className={styles.homePageCard}>
             <div className={styles.img}></div>
             <div className={styles.content}>
-                <p className={styles.title}>Lorem ipsum</p>
-                <p className={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam sunt nihil unde necessitatibus voluptatum.</p>
+                <p className={styles.title}>{title}</p>
+                <p className={styles.desc}>{desc}</p>
             </div>
         </div>
         </div>
