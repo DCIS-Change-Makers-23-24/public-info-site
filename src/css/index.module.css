@@ -5,4 +5,19 @@
 .homePage1 {
   width: 100vw;
   height: 92vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homePage1 .cardContainer {
+  width: 80vw;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
