@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './HomePageCard.module.css'
+import styles from './LearnPageCard.module.css'
 
-const HomePageCard = ({ title, desc }) => {
+const LearnPageCard = ({ title, desc }) => {
     return (
-        <div className={styles.homePageCardContainer}>
-        <div className={styles.homePageCard}>
+        <div className={styles.learnPageCardContainer}>
+        <div className={styles.learnPageCard}>
             <div className={styles.img}></div>
             <div className={styles.content}>
                 <p className={styles.title}>{title}</p>
@@ -15,4 +15,4 @@ const HomePageCard = ({ title, desc }) => {
     )
 }
 
-export default HomePageCard;
+export default LearnPageCard;

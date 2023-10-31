@@ -1,11 +1,11 @@
-.homePageCardContainer {
+.learnPageCardContainer {
     border-radius: 8px;
 
     transition: all 0.25s;
     cursor: pointer;
 }
 
-.homePageCard {
+.learnPageCard {
     display: flex;
 
     width: 31.6vw;
@@ -17,29 +17,29 @@
     margin: 16px;
 }
 
-.homePageCard .img {
+.learnPageCard .img {
     width: 100%;
     height: 65%;
     background-color: #bdbdbd;
 }
 
-.homePageCard .content {
+.learnPageCard .content {
     width: 100%;
     height: 35%;
     padding: 12px 0 8px 0;
 }
 
-.homePageCard .content .title {
+.learnPageCard .content .title {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
-.homePageCard .content .desc {
+.learnPageCard .content .desc {
     color: grey;
     font-size: 15px;
 } 
 
-.homePageCardContainer:hover {
+.learnPageCardContainer:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
