@@ -16,7 +16,15 @@ export default function Home() {
       title={`Home`}
       description="Description will go into a meta tag in <head />">
       <main className={styles.homePage}>
-          
+          <div className={styles.homePage1}>
+            <div className={styles.homePage1Overlay}></div>
+            <h1 className={styles.homePage1Header}>Big Header Text</h1>
+            <p className={styles.homePage1Desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel nunc sed ligula tristique tincidunt.</p>
+            <div className={styles.homePage1BottomBar}>
+              <button className={styles.homePage1BottomBarButton}>Get help</button>
+              <button className={styles.homePage1BottomBarButton}>How to join</button>
+            </div>
+          </div>
       </main>
     </Layout>
   );
