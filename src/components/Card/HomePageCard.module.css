@@ -1,3 +1,10 @@
+.homePageCardContainer {
+    border-radius: 8px;
+
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
 .homePageCard {
     display: flex;
 
@@ -6,6 +13,8 @@
 
     display: flex;
     flex-direction: column;
+
+    margin: 16px;
 }
 
 .homePageCard .img {
@@ -29,4 +38,8 @@
 .homePageCard .content .desc {
     color: grey;
     font-size: 15px;
+} 
+
+.homePageCardContainer:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
