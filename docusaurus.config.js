@@ -66,7 +66,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/card.png',
       navbar: {
-        title: 'N ',
+        title: 'Nord Anglia Education Computing Association ',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
