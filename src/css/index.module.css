@@ -77,7 +77,14 @@
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  font-family: var(--ifm-heading-font-family)
+  font-family: var(--ifm-heading-font-family);
+
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.homePage1BottomBarButton:hover {
+  background-color: #0000008b;
 }
 
 .homePage2 {
