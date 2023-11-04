@@ -2,4 +2,4 @@
 sidebar_position: 1
 ---
 
-# Admin
+# Getting started with admin
