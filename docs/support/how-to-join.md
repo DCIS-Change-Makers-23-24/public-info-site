@@ -1,11 +1,11 @@
 ---
-id: getting-started
-title: Getting started with admin
+id: how-to-join
+title: How to join FutureHack
 hide_title: false
 hide_table_of_contents: false
-sidebar_label: Getting started
+sidebar_label: How to join
 custom_edit_url: https://github.com/facebook/docusaurus/edit/main/docs/api-doc-markdown.md
-description: A guide on how to get started with admin
+description: How to join FutureHack, in detail, described step by step
 keywords:
   - docs
   - docusaurus
@@ -15,4 +15,4 @@ last_update:
   author: Nord Anglia Education Computing Association
 ---
 
-# Getting started with admin
+# How to join FutureHack

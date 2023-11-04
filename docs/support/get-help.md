@@ -1,11 +1,11 @@
 ---
-id: getting-started
-title: Getting started with admin
+id: get-help
+title: Get help
 hide_title: false
 hide_table_of_contents: false
-sidebar_label: Getting started
+sidebar_label: Get help
 custom_edit_url: https://github.com/facebook/docusaurus/edit/main/docs/api-doc-markdown.md
-description: A guide on how to get started with admin
+description: Get help regarding FutureHack
 keywords:
   - docs
   - docusaurus
@@ -15,4 +15,4 @@ last_update:
   author: Nord Anglia Education Computing Association
 ---
 
-# Getting started with admin
+# Get help
