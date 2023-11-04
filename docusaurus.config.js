@@ -74,10 +74,11 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'supportSidebar',
             position: 'left',
             label: 'Support',
           },
+          {type: 'docSidebar', sidebarId: 'adminSidebar', label: 'Admin', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/https://github.com/DCIS-Change-Makers-23-24',
