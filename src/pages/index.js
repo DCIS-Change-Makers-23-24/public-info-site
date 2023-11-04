@@ -107,9 +107,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.homePage3}>
-          <h1 className={styles.homePage3Header}>Contact</h1>
-        </div>
       </main>
     </Layout>
   );
