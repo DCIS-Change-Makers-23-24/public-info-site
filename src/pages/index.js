@@ -8,30 +8,86 @@ import styles from "../css/index.module.css";
 import HomePageCard from "../components/Card/LearnPageCard";
 
 import { useHistory } from "@docusaurus/router";
+import '../css/animation.css'
+
+import {gsap} from 'gsap';
+import {useRef, useLayoutEffect} from 'react'
+
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const history = useHistory()
+  const ref = useRef(null)
+
+  useLayoutEffect(() => {
+    const element = ref.current;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(element.querySelectorAll(".home-page-1-anim"), {
+        y: -20,
+        opacity: 0,
+      }, {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.6
+      })
+
+      return () => ctx.revert()
+    }, ref)
+
+      
+  }, [])
 
   return (
     <Layout
       title={`Home`}
       description="Description will go into a meta tag in <head />"
     >
-      <main className={styles.homePage}>
+      <main className={styles.homePage} ref={ref}>
         <div className={styles.homePage1}>
-          <div className={styles.homePage1Overlay}></div>
-          <h1 className={styles.homePage1Header}>FutureHack</h1>
-          <p className={styles.homePage1Desc}>
-            Forging connections amidst the ever-shifting IT landscape.
-          </p>
-          <div className={styles.homePage1BottomBar}>
-            <button className={styles.homePage1BottomBarButton} onClick={() => history.push('/docs/support/get-help')}>
-              Get help
-            </button>
-            <button className={styles.homePage1BottomBarButton} onClick={() => history.push('/docs/support/how-to-join')}>
-              How to join
-            </button>
+          <div className={styles.homePage1TextContainer}>
+            <h1 className={styles.homePage1Header + " home-page-1-anim"}>FutureHack</h1>
+            <p className={styles.homePage1Desc + " home-page-1-anim"}>
+              Forging connections amidst the ever-shifting IT landscape.
+            </p>
+            <div className={styles.buttonRow + " home-page-1-anim"}>
+              <button className={styles.homePage1Button} onClick={() => history.push('/docs/support/get-help')}>
+                Get help
+              </button>
+              <button className={styles.homePage1Button} onClick={() => history.push('/docs/support/how-to-join')}>
+                How to join
+              </button>
+            </div>
+          </div>
+          <div className="home-page-animation">
+            <div className="screen home-page-1-anim">
+              <div className="title-container">
+                <p className="title">index.js</p>
+                <div className="buttons">
+                  <div className="abutton red"></div>
+                  <div className="abutton orange"></div>
+                  <div className="abutton green"></div>
+                </div>
+              </div>
+              <div className="code">
+                <p className="line-1"><span className="bold">import</span> react, {'{useState, useEffect}'} <span className="bold">from</span> 'react'</p>
+                <br />
+                <p className="line-2">const NewComponent = (props) ={'>'} {'{'}</p>
+                <p className="line-3">&nbsp;&nbsp;&nbsp;&nbsp;const [stuff, set_stuff] = useState(null);</p>
+                <br/>
+                <p className="line-4">&nbsp;&nbsp;&nbsp;&nbsp;useEffect(() ={'>'} {'{'}</p>
+                <p className="line-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.title = "Example Title Here";</p>
+                <p className="line-6">&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</p>
+                <br />
+                <p className="line-7">&nbsp;&nbsp;&nbsp;&nbsp;{'return ('}</p>
+                <p className="line-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<h1>Hello World!</h1>'}</p>
+                <p className="line-9">&nbsp;&nbsp;&nbsp;&nbsp;{');'}</p>
+                <p className="line-10">{'};'}</p>
+                <br />
+                <p className="line-11">{'export default NewComponent;'}</p>
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.homePage2}>

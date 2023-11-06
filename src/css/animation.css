@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap');
+
+.home-page-animation {
+  width: 30%;
+}
+
+.home-page-animation .screen {
+  width: 30vw;
+  height: 60vh;
+  border-radius: 12px;
+  background-color: rgba(117, 161, 238, 0.568);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page-animation .screen .title-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    border-bottom: 2px solid #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-page-animation .screen .title-container .title {
+    margin: 4px 4px 4px 12px;
+    font-weight: 600;
+    font-family: "Source Code Pro"
+}
+
+.home-page-animation .screen .title-container .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 60px;
+
+    margin-right: 20px;
+}
+
+.home-page-animation .screen .title-container .buttons .abutton {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+.home-page-animation .screen .title-container .buttons .abutton.red {
+    background-color: red;
+}
+
+
+.home-page-animation .screen .title-container .buttons .abutton.orange {
+    background-color: orange;
+}
+
+.home-page-animation .screen .title-container .buttons .abutton.green {
+    background-color: rgb(47, 206, 47);
+}
+
+.home-page-animation .screen .code {
+    margin-top: 10%;
+    font-family: "Source Code Pro";
+    padding-left: 12px;
+}
+
+.home-page-animation .screen .code p {
+    line-height: 12px;
+}
+
+.bold {
+    font-weight: bold;
+}

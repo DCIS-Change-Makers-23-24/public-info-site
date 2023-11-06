@@ -4,16 +4,26 @@
 
 .homePage1 {
   width: 100vw;
-  height: 65vh;
+  height: 90vh;
 
   position: relative;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
+.homePage1TextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  text-align: left;
+}
+
+/* 
 .homePage1Overlay {
   width: 100%;
   height: 100%;
@@ -30,21 +40,42 @@
   background-position: center;
 
   filter: brightness(0.5)
-}
+} */
 
 .homePage1Header {
-  font-size: 5rem;
-  text-transform: uppercase;
-  color: white;
+  font-size: 3rem;
   z-index: 3;
 }
 
 .homePage1Desc {
   font-size: 1.7rem;
-  color: white;
   z-index: 3;
 }
 
+.homePage1ButtonRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.homePage1Button {
+  background-color: #4ec3ceff;
+
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+
+  font-family: var(--ifm-heading-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  
+  margin-right: 1vw;
+
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+/* 
 .homePage1BottomBar {
   position: absolute;
   bottom: 0;
@@ -85,7 +116,7 @@
 
 .homePage1BottomBarButton:hover {
   background-color: #0000008b;
-}
+} */
 
 .homePage2 {
   width: 100vw;
@@ -94,15 +125,15 @@
   position: relative;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
   padding-top: 5vw;
 }
 
 .homePage2 p {
-  width: 70%;
+  width: 50%;
   font-size: 16px;
 }
 
