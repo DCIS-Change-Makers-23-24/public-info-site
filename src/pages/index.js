@@ -20,10 +20,9 @@ export default function Home() {
       <main className={styles.homePage}>
         <div className={styles.homePage1}>
           <div className={styles.homePage1Overlay}></div>
-          <h1 className={styles.homePage1Header}>Big Header Text</h1>
+          <h1 className={styles.homePage1Header}>FutureHack</h1>
           <p className={styles.homePage1Desc}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel nunc
-            sed ligula tristique tincidunt.
+            Forging connections amidst the ever-shifting IT landscape.
           </p>
           <div className={styles.homePage1BottomBar}>
             <button className={styles.homePage1BottomBarButton}>
