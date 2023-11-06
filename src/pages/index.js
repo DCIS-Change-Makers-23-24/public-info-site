@@ -7,10 +7,11 @@ import Layout from "@theme/Layout";
 import styles from "../css/index.module.css";
 import HomePageCard from "../components/Card/LearnPageCard";
 
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "@docusaurus/router";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+  const history = useHistory()
 
   return (
     <Layout
@@ -25,10 +26,10 @@ export default function Home() {
             Forging connections amidst the ever-shifting IT landscape.
           </p>
           <div className={styles.homePage1BottomBar}>
-            <button className={styles.homePage1BottomBarButton}>
+            <button className={styles.homePage1BottomBarButton} onClick={() => history.push('/docs/support/get-help')}>
               Get help
             </button>
-            <button className={styles.homePage1BottomBarButton}>
+            <button className={styles.homePage1BottomBarButton} onClick={() => history.push('/docs/support/how-to-join')}>
               How to join
             </button>
           </div>
