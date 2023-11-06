@@ -134,11 +134,69 @@
 
 .homePage2 p {
   width: 50%;
-  font-size: 16px;
+  font-size: 18px;
+}
+
+
+.homePage3 {
+  width: 100vw;
+  height: 70vh;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 5vw;
+
+  font-size: 18px;
 }
 
 .title {
   font-weight: bold;
   font-size: 3rem;
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
+}
+
+.homePage4 {
+  width: 100vw;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.parentColumn {
+  width: 60%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.childColumn {
+  width: 40%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h2.subtitle {
+  font-size: 2.5rem;
+  margin-bottom: 10vh;
+}
+
+h3.subtitle {
+  font-size: 2rem;
+  margin-bottom: 3vh;
+  margin-top: 5vh;
 }

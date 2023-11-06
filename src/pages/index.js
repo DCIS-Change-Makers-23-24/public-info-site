@@ -11,13 +11,19 @@ import { useHistory } from "@docusaurus/router";
 import '../css/animation.css'
 
 import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger.js';
+
 import {useRef, useLayoutEffect} from 'react'
+
+gsap.registerPlugin(ScrollTrigger)
 
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const history = useHistory()
   const ref = useRef(null)
+
+  // landing page animations
 
   useLayoutEffect(() => {
     const element = ref.current;
@@ -32,11 +38,64 @@ export default function Home() {
         duration: 1,
         stagger: 0.6
       })
-
-      return () => ctx.revert()
     }, ref)
 
-      
+    return () => ctx.revert()
+  }, [])
+
+  // page 2 animations
+
+  useLayoutEffect(() => {
+    const element = ref.current;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(element.querySelectorAll(".home-page-2-anim"), {
+        x: -20,
+        opacity: 0,
+      }, {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.6,
+        scrollTrigger: {
+          trigger: element.querySelector(".home-page-2"),
+          start: "top 20%",
+          end: "bottom bottom",
+          toggleActions: "play none none reverse",
+          markers: true
+        }
+      })
+    }, ref)
+
+    return () => ctx.revert()
+  }, [])
+
+
+  // page 3 animations
+
+  useLayoutEffect(() => {
+    const element = ref.current;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(element.querySelectorAll(".home-page-3-anim"), {
+        x: 20,
+        opacity: 0,
+      }, {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.6,
+        scrollTrigger: {
+          trigger: element.querySelector(".home-page-3"),
+          start: "top 20%",
+          end: "bottom bottom",
+          toggleActions: "play none none reverse",
+          markers: true
+        }
+      })
+    }, ref)
+
+    return () => ctx.revert()
   }, [])
 
   return (
@@ -90,52 +149,47 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.homePage2}>
-            <h1 className={styles.title}>
+        <div className={styles.homePage2 + " home-page-2"}>
+            <h1 className={styles.title + " home-page-2-anim"}>
               What is FutureHack?
             </h1>
-            <p>FutureHack is an engaging and intellectually stimulating event that will encompass a set of 2 thought-provoking challenges. These challenges will be focused on assessing participants' critical thinking skills, with a particular emphasis on how technology can be harnessed to address pressing global issues and contribute to the betterment of our world. In order to tackle these challenges effectively, participants are encouraged to craft innovative solutions that ideally integrate both hardware and software components. This unique blend of hardware and software solutions will not only test your technical expertise but also your creative problem-solving abilities, ensuring that you are well-prepared to make a positive impact in our ever-evolving digital age.</p>
+            <p className={"home-page-2-anim"}>FutureHack is an engaging and intellectually stimulating event that will encompass a set of 2 thought-provoking challenges. These challenges will be focused on assessing participants' critical thinking skills, with a particular emphasis on how technology can be harnessed to address pressing global issues and contribute to the betterment of our world. In order to tackle these challenges effectively, participants are encouraged to craft innovative solutions that ideally integrate both hardware and software components. This unique blend of hardware and software solutions will not only test your technical expertise but also your creative problem-solving abilities, ensuring that you are well-prepared to make a positive impact in our ever-evolving digital age.</p>
         </div>
-        <div className={styles.homePage3}>
-            <h1 className={styles.title}>
-                Why should you do the NAE Hackathon?
+        <div className={styles.homePage3 + " home-page-3"}>
+            <h1 className={styles.title + " home-page-3-anim"}>
+                Why should you participate in FutureHack?
             </h1>
-            <ul>
+            <ul className={"home-page-3-anim"}>
               <li>Skill Development</li><ul><li>FutureHack will require problem-solving, critical thinking, and analytical skills</li><li>By participating, you can sharpen your ability to solve complex technical problems, which will prove to be beneficial in various aspects of your life.</li></ul>
               <li>Networking</li><ul><li>FutureHack is designed to garner like-minded individuals who share an interest in technology</li><li>This provides an opportunity to connect with fellow tech enthusiasts, potential mentors, and even future collaborators in tech-related projects.</li></ul>
               <li>Competitive Edge</li><ul><li>For students and professionals, excelling in FutureHack and other hackathons can be an impressive addition to your resume or portfolio</li><li>It demonstrates your commitment to continuous learning and your proficiency in the field, which can help you stand out to potential employers or educational institutions.</li></ul>
             </ul>
         </div>
         <div className={styles.homePage4}>
-          <p>
-            <span className={styles.title}>Details for the Hackathon</span>{" "}
-            <br />
-            <br />
-            <ul>
-              <li>Date: dd/mm/yyyy</li>
-              <li>Duration: 2 days and 3 nights</li>
-              <li>Location: DCIS@Singapore</li>
-            </ul>
-            <br />
-            <span className={styles.title}>
+          <div className={styles.parentColumn}>
+            <h2 className={styles.subtitle}>
+              Questions for the Hackathon
+            </h2>
+            Lorem ipsum dolor, sit amet? Consectetur adipiscing elit
+            programa.
+          </div>    
+          <div className={styles.childColumn}>
+            <h3 className={styles.subtitle}>
               Categories for the Hackathon
-            </span>{" "}
-            <br />
-            <br />
+            </h3>{" "}
             <ol>
               <li>Hardware</li>
               <li>Software</li>
               <li>Both hardware and software</li>
             </ol>
-            <br />
-            <span className={styles.title}>
-              Question for the Hackathon
-            </span>{" "}
-            <br />
-            <br />
-            Lorem ipsum dolor, sit amet? Consectetur adipiscing elit
-            programa.
-          </p>
+            <h3 className={styles.subtitle}>Details for the Hackathon</h3>
+            <ul>
+              <li>Date: dd/mm/yyyy</li>
+              <li>Duration: 1 week</li>
+              <li>Timing: Unknown</li>
+              <li>Location: Virtual and DCIS@Singapore</li>
+            </ul>
+          </div>
         </div>
       </main>
     </Layout>

@@ -6,10 +6,9 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
-import {TextPlugin} from 'gsap/dist/TextPlugin'
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger.js';
 
-gsap.registerPlugin(ScrollTrigger, TextPlugin)
+gsap.registerPlugin(ScrollTrigger)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
