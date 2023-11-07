@@ -172,3 +172,23 @@
   text-align: center;
   font-weight: bold;
 }
+
+
+.homePage4 {
+  width: 100vw;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homePage4Header {
+  font-size: 3rem;
+}
+
+.homePage4Content {
+  font-size: 1.2rem;
+  width: 60%;
+}

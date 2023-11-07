@@ -52,24 +52,43 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.homePage3}>
-          <h1 className={styles.homePage2Header}>Why the NAECA?</h1>
+          <h1 className={styles.homePage3Header}>Why the NAECA?</h1>
           <div className={styles.reasons}>
             <div className={styles.reason}>
               <p className={styles.reasonTitle}>Lorem ipsum</p>
+              <span className="pi pi-lock"></span>
             </div>
             <div className={styles.reason}>
               <p className={styles.reasonTitle}>Lorem ipsum</p>
+              <span className="pi pi-lock"></span>
             </div>
             <div className={styles.reason}>
               <p className={styles.reasonTitle}>Lorem ipsum</p>
+              <span className="pi pi-lock"></span>
             </div>
             <div className={styles.reason}>
               <p className={styles.reasonTitle}>Lorem ipsum</p>
+              <span className="pi pi-lock"></span>
             </div>
             <div className={styles.reason}>
               <p className={styles.reasonTitle}>Lorem ipsum</p>
+              <span className="pi pi-lock"></span>
             </div>
           </div>
+        </div>
+        <div className={styles.homePage4}>
+          <h1 className={styles.homePage4Header}>Our aims</h1>
+          <p className={styles.homePage4Content}>
+            <ul>
+              <li>To bring both NAE, FORBISIA and Singapore based international schools together</li>
+              <li>Allow people to network and interconnect together​</li>
+              <li>Teach and introduce complex programing skills in one place​</li>
+              <li>Improve people's presentation and problem-solving skills</li>
+              <li>Give students an open, accesible platform to learn and compete</li>
+              <li>Use a competition to allow us to see the engagement between schools</li>
+              <li>Launching NAECA via a competition</li>
+            </ul>
+          </p>
         </div>
       </main>
     </Layout>
