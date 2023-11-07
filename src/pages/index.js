@@ -1,7 +1,11 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import styles from "../css/index.module.css";
 
+// styles
+import styles from "../css/index.module.css";
+import 'primeicons/primeicons.css';
+
+// hooks
 import { useHistory } from "@docusaurus/router";
 
 export default function Home() {
