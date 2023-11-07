@@ -1,16 +1,12 @@
 import React from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import styles from "../css/index.module.css";
 
-import HomePageCard from "../components/Card/LearnPageCard";
 import { useHistory } from "@docusaurus/router";
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
-  const history = useHistory()
+  const history = useHistory();
+
   return (
     <Layout
       title={`Home`}
