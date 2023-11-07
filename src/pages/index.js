@@ -54,7 +54,7 @@ export default function Home() {
           start: 'top top',
           end: 'bottom bottom',
           trigger: element.querySelector('.home-page-2'),
-          markers: true
+          toggleActions: "play none none reverse",
         }
       })
     }, ref)
@@ -80,7 +80,7 @@ export default function Home() {
           start: 'top 20%',
           end: 'bottom bottom',
           trigger: element.querySelector('.home-page-3'),
-          markers: true
+          toggleActions: "play none none reverse",
         }
       })
     }, ref)
@@ -105,7 +105,7 @@ export default function Home() {
           start: 'top 30%',
           end: 'bottom bottom',
           trigger: element.querySelector('.home-page-4'),
-          markers: true
+          toggleActions: "play none none reverse",
         }
       })
     }, ref)
@@ -130,7 +130,7 @@ export default function Home() {
           start: 'top 30%',
           end: 'bottom bottom',
           trigger: element.querySelector('.home-page-5'),
-          markers: true
+          toggleActions: "play none none reverse",
         }
       })
     }, ref)
