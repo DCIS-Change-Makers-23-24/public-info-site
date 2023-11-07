@@ -178,6 +178,20 @@ export default function Home() {
             </div>
           </div>
         </div>
+         <div className={styles.homePage4}>
+          <h1 className={styles.homePage4Header}>Our aims</h1>
+          <p className={styles.homePage4Content}>
+            <ul>
+              <li>To bring both NAE, FORBISIA and Singapore based international schools together</li>
+              <li>Allow people to network and interconnect together​</li>
+              <li>Teach and introduce complex programing skills in one place​</li>
+              <li>Improve people's presentation and problem-solving skills</li>
+              <li>Give students an open, accesible platform to learn and compete</li>
+              <li>Use a competition to allow us to see the engagement between schools</li>
+              <li>Launching NAECA via a competition</li>
+            </ul>
+          </p>
+        </div>
         <div className={styles.homePage5}>
           <h1 className={styles.homePage5Header}>What's after</h1>
           <p className={styles.homePage5Content}>
