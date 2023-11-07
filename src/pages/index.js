@@ -94,17 +94,42 @@ export default function Home() {
 
     const ctx = gsap.context(() => {
       gsap.fromTo(element.querySelectorAll(".home-page-4-anim"), {
-        y: 20,
+        x: 20,
         opacity: 0,
       }, {
-        y: 0,
+        x: 0,
         opacity: 1,
         duration: 1,
         stagger: 0.3,
         scrollTrigger: {
-          start: 'top 20%',
+          start: 'top 30%',
           end: 'bottom bottom',
           trigger: element.querySelector('.home-page-4'),
+          markers: true
+        }
+      })
+    }, ref)
+
+    return () => ctx.revert()
+  }, [])
+
+  // page 5
+  useLayoutEffect(() => {
+    const element = ref.current;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(element.querySelectorAll(".home-page-5-anim"), {
+        x: -20,
+        opacity: 0,
+      }, {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          start: 'top 30%',
+          end: 'bottom bottom',
+          trigger: element.querySelector('.home-page-5'),
           markers: true
         }
       })
@@ -178,9 +203,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-         <div className={styles.homePage4}>
-          <h1 className={styles.homePage4Header}>Our aims</h1>
-          <p className={styles.homePage4Content}>
+         <div className={styles.homePage4 + " home-page-4"}>
+          <h1 className={styles.homePage4Header + " home-page-4-anim"}>Our aims</h1>
+          <p className={styles.homePage4Content + " home-page-4-anim"}>
             <ul>
               <li>To bring both NAE, FORBISIA and Singapore based international schools together</li>
               <li>Allow people to network and interconnect together​</li>
@@ -192,9 +217,9 @@ export default function Home() {
             </ul>
           </p>
         </div>
-        <div className={styles.homePage5}>
-          <h1 className={styles.homePage5Header}>What's after</h1>
-          <p className={styles.homePage5Content}>
+        <div className={styles.homePage5 + " home-page-5"}>
+          <h1 className={styles.homePage5Header + " home-page-5-anim"}>What's after</h1>
+          <p className={styles.homePage5Content + " home-page-5-anim"}>
             <ul>
               <li>Forming Nord Anglia Education Computing Association​</li>
               <li>Structure:</li>
