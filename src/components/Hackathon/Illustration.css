@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap');
 
-.home-page-animation {
+.hackathon-page-animation {
   width: 30%;
 }
 
-.home-page-animation .screen {
+.hackathon-page-animation .screen {
   width: 30vw;
   height: 60vh;
   border-radius: 12px;
@@ -17,7 +17,7 @@
   box-shadow: rgba(90, 151, 216, 0.8) 0 0 50px 20px;
 }
 
-.home-page-animation .screen .title-container {
+.hackathon-page-animation .screen .title-container {
     position: absolute;
     top: 0;
     width: 100%;
@@ -30,13 +30,13 @@
     align-items: center;
 }
 
-.home-page-animation .screen .title-container .title {
+.hackathon-page-animation .screen .title-container .title {
     margin: 4px 4px 4px 12px;
     font-weight: 600;
     font-family: "Source Code Pro"
 }
 
-.home-page-animation .screen .title-container .buttons {
+.hackathon-page-animation .screen .title-container .buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -47,32 +47,32 @@
     margin-right: 20px;
 }
 
-.home-page-animation .screen .title-container .buttons .abutton {
+.hackathon-page-animation .screen .title-container .buttons .abutton {
     width: 10px;
     height: 10px;
     border-radius: 50px;
 }
 
-.home-page-animation .screen .title-container .buttons .abutton.red {
+.hackathon-page-animation .screen .title-container .buttons .abutton.red {
     background-color: red;
 }
 
 
-.home-page-animation .screen .title-container .buttons .abutton.orange {
+.hackathon-page-animation .screen .title-container .buttons .abutton.orange {
     background-color: orange;
 }
 
-.home-page-animation .screen .title-container .buttons .abutton.green {
+.hackathon-page-animation .screen .title-container .buttons .abutton.green {
     background-color: rgb(47, 206, 47);
 }
 
-.home-page-animation .screen .code {
+.hackathon-page-animation .screen .code {
     margin-top: 10%;
     font-family: "Source Code Pro";
     padding-left: 12px;
 }
 
-.home-page-animation .screen .code p {
+.hackathon-page-animation .screen .code p {
     line-height: 12px;
 }
 

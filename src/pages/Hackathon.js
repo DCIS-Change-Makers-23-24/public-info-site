@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import Layout from "@theme/Layout";
 
-import styles from "../css/index.module.css";
+// modules
+import Illustration from '../components/Hackathon/Illustration.js'
 
+// styles
+import styles from "../css/Hackathon.module.css";
+
+// hooks
 import { useHistory } from "@docusaurus/router";
-import '../css/animation.css'
 
+// animation
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger.js';
 
-import {useRef, useLayoutEffect} from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
-
 
 export default function Hackathon() {
   const history = useHistory()
@@ -64,7 +67,6 @@ export default function Hackathon() {
     return () => ctx.revert()
   }, [])
 
-
   // page 3 animations
 
   useLayoutEffect(() => {
@@ -113,33 +115,7 @@ export default function Hackathon() {
             </div>
           </div>
           <div className="hackathon-page-animation">
-            <div className="screen hackathon-page-1-anim">
-              <div className="title-container">
-                <p className="title">index.js</p>
-                <div className="buttons">
-                  <div className="abutton red"></div>
-                  <div className="abutton orange"></div>
-                  <div className="abutton green"></div>
-                </div>
-              </div>
-              <div className="code">
-                <p className="line-1"><span className="bold">import</span> react, {'{useState, useEffect}'} <span className="bold">from</span> 'react'</p>
-                <br />
-                <p className="line-2">const NewComponent = (props) ={'>'} {'{'}</p>
-                <p className="line-3">&nbsp;&nbsp;&nbsp;&nbsp;const [stuff, set_stuff] = useState(null);</p>
-                <br/>
-                <p className="line-4">&nbsp;&nbsp;&nbsp;&nbsp;useEffect(() ={'>'} {'{'}</p>
-                <p className="line-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.title = "Example Title Here";</p>
-                <p className="line-6">&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</p>
-                <br />
-                <p className="line-7">&nbsp;&nbsp;&nbsp;&nbsp;{'return ('}</p>
-                <p className="line-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<h1>Hello World!</h1>'}</p>
-                <p className="line-9">&nbsp;&nbsp;&nbsp;&nbsp;{');'}</p>
-                <p className="line-10">{'};'}</p>
-                <br />
-                <p className="line-11">{'export default NewComponent;'}</p>
-              </div>
-            </div>
+            <Illustration />
           </div>
         </div>
         <div className={styles.hackathonPage2 + " hackathon-page-2"}>
