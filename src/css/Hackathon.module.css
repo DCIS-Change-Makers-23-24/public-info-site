@@ -1,8 +1,8 @@
-.homePage {
+.hackathonPage {
   width: 100vw;
 }
 
-.homePage1 {
+.hackathonPage1 {
   width: 100vw;
   height: 90vh;
 
@@ -14,7 +14,7 @@
   justify-content: space-around;
 }
 
-.homePage1TextContainer {
+.hackathonPage1TextContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -24,7 +24,7 @@
 }
 
 /* 
-.homePage1Overlay {
+.hackathonPage1Overlay {
   width: 100%;
   height: 100%;
 
@@ -42,23 +42,23 @@
   filter: brightness(0.5)
 } */
 
-.homePage1Header {
+.hackathonPage1Header {
   font-size: 3rem;
   z-index: 3;
 }
 
-.homePage1Desc {
+.hackathonPage1Desc {
   font-size: 1.7rem;
   z-index: 3;
 }
 
-.homePage1ButtonRow {
+.hackathonPage1ButtonRow {
   display: flex;
   flex-direction: row;
   gap: 1vw;
 }
 
-.homePage1Button {
+.hackathonPage1Button {
   background-color: #4ec3ceff;
 
   padding: 16px;
@@ -76,7 +76,7 @@
 }
 
 /* 
-.homePage1BottomBar {
+.hackathonPage1BottomBar {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -94,7 +94,7 @@
   gap: 1vw;
 }
 
-.homePage1BottomBarButton {
+.hackathonPage1BottomBarButton {
   position: relative;
 
   width: 30%;
@@ -114,11 +114,11 @@
   cursor: pointer;
 }
 
-.homePage1BottomBarButton:hover {
+.hackathonPage1BottomBarButton:hover {
   background-color: #0000008b;
 } */
 
-.homePage2 {
+.hackathonPage2 {
   width: 100vw;
   height: 60vh;
 
@@ -132,13 +132,13 @@
   padding-top: 5vw;
 }
 
-.homePage2 p {
+.hackathonPage2 p {
   width: 50%;
   font-size: 18px;
 }
 
 
-.homePage3 {
+.hackathonPage3 {
   width: 100vw;
   height: 70vh;
 
@@ -160,7 +160,7 @@
   margin-bottom: 10vh;
 }
 
-.homePage4 {
+.hackathonPage4 {
   width: 100vw;
   height: 80vh;
 
