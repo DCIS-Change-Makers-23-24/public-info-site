@@ -29,7 +29,43 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.homePage2}>
-          
+          <h1 className={styles.homePage2Header}>What is the NAECA?</h1>
+          <div className={styles.homePage2Columns}>
+            <div className={styles.homePage2Column}>
+              <p className={styles.content}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum turpis ac nulla feugiat, et accumsan turpis molestie. Proin sagittis, felis at maximus interdum, lectus diam iaculis nibh, eu scelerisque arcu nunc eu enim. Quisque condimentum pretium mauris, non congue diam convallis id. Proin euismod nisl velit, ut bibendum est posuere eu. Donec laoreet lorem eget lectus cursus, quis hendrerit orci dapibus. Pellentesque pretium nibh eu ipsum venenatis, sed placerat diam dictum. Duis gravida, nunc nec rutrum pharetra, nulla risus volutpat tortor, eu tempus lacus magna at tortor. Sed lobortis, neque eget sagittis tempor, nisl velit porttitor magna, sit amet porta metus ligula mattis velit. Nulla facilisi. Integer in luctus orci.
+
+                Phasellus tempus neque ac justo gravida ultricies. Fusce cursus dapibus dui nec sodales. Nunc semper dui tortor. Aliquam varius justo quis neque suscipit vestibulum. Integer eleifend vulputate metus eget consectetur. In sagittis hendrerit pretium. Aenean rutrum, ligula vitae gravida viverra, quam eros porttitor orci, a vestibulum ligula magna non quam. Sed tortor lacus, porttitor vel erat sed, tempor congue mi. Pellentesque mauris lectus, cursus eget iaculis sollicitudin, gravida in nisi. Nulla facilisi.
+              </p>
+            </div>
+            <div className={styles.homePage2Column}>
+              <p className={styles.content}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum turpis ac nulla feugiat, et accumsan turpis molestie. Proin sagittis, felis at maximus interdum, lectus diam iaculis nibh, eu scelerisque arcu nunc eu enim. Quisque condimentum pretium mauris, non congue diam convallis id. Proin euismod nisl velit, ut bibendum est posuere eu. Donec laoreet lorem eget lectus cursus, quis hendrerit orci dapibus. Pellentesque pretium nibh eu ipsum venenatis, sed placerat diam dictum. Duis gravida, nunc nec rutrum pharetra, nulla risus volutpat tortor, eu tempus lacus magna at tortor. Sed lobortis, neque eget sagittis tempor, nisl velit porttitor magna, sit amet porta metus ligula mattis velit. Nulla facilisi. Integer in luctus orci.
+
+                Phasellus tempus neque ac justo gravida ultricies. Fusce cursus dapibus dui nec sodales. Nunc semper dui tortor. Aliquam varius justo quis neque suscipit vestibulum. Integer eleifend vulputate metus eget consectetur. In sagittis hendrerit pretium. Aenean rutrum, ligula vitae gravida viverra, quam eros porttitor orci, a vestibulum ligula magna non quam. Sed tortor lacus, porttitor vel erat sed, tempor congue mi. Pellentesque mauris lectus, cursus eget iaculis sollicitudin, gravida in nisi. Nulla facilisi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.homePage3}>
+          <h1 className={styles.homePage2Header}>Why the NAECA?</h1>
+          <div className={styles.reasons}>
+            <div className={styles.reason}>
+              <p className={styles.reasonTitle}>Lorem ipsum</p>
+            </div>
+            <div className={styles.reason}>
+              <p className={styles.reasonTitle}>Lorem ipsum</p>
+            </div>
+            <div className={styles.reason}>
+              <p className={styles.reasonTitle}>Lorem ipsum</p>
+            </div>
+            <div className={styles.reason}>
+              <p className={styles.reasonTitle}>Lorem ipsum</p>
+            </div>
+            <div className={styles.reason}>
+              <p className={styles.reasonTitle}>Lorem ipsum</p>
+            </div>
+          </div>
         </div>
       </main>
     </Layout>
