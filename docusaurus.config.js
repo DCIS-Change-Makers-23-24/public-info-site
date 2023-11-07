@@ -76,6 +76,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          {to: '/hackathon', label: 'FutureHack', position: 'left'},
           {
             type: 'docSidebar',
             sidebarId: 'supportSidebar',
