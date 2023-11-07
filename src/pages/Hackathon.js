@@ -95,8 +95,8 @@ export default function Hackathon() {
 
   return (
     <Layout
-      title={`hackathon`}
-      description="Description will go into a meta tag in <head />"
+      title={`FutureHack`}
+      description="The hackathon we are hosting"
     >
       <main className={styles.hackathonPage} ref={ref}>
         <div className={styles.hackathonPage1}>
