@@ -14,6 +14,9 @@ import { useHistory } from "@docusaurus/router";
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger.js';
 
+// imgs
+import logo from '../../static/img/futurehack-logo.png'
+
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Hackathon() {
@@ -114,7 +117,7 @@ export default function Hackathon() {
             </div>
           </div>
           <div className="hackathon-page-animation">
-            <Illustration />
+            <img alt="Futurehack Logo" src={logo} />
           </div>
         </div>
         <div className={styles.hackathonPage2 + " hackathon-page-2"}>
