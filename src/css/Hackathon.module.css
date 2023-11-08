@@ -1,0 +1,140 @@
+.hackathonPage {
+  width: 100vw;
+}
+
+.hackathonPage1 {
+  width: 100vw;
+  height: 90vh;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hackathonPage1TextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  text-align: left;
+}
+
+.hackathonPage1Header {
+  font-size: 3rem;
+  z-index: 3;
+}
+
+.hackathonPage1Desc {
+  font-size: 1.7rem;
+  z-index: 3;
+}
+
+.hackathonPage1ButtonRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.hackathonPage1Button {
+  background-color: #4ec3ceff;
+
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+
+  font-family: var(--ifm-heading-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  
+  margin-right: 1vw;
+
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.hackathonPage2 {
+  width: 100vw;
+  height: 60vh;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding-top: 5vw;
+}
+
+.hackathonPage2 p {
+  width: 50%;
+  font-size: 18px;
+}
+
+
+.hackathonPage3 {
+  width: 100vw;
+  height: 70vh;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 5vw;
+
+  font-size: 18px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 10vh;
+}
+
+.hackathonPage4 {
+  width: 100vw;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.parentColumn {
+  width: 60%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.childColumn {
+  width: 40%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h2.subtitle {
+  font-size: 2.5rem;
+  margin-bottom: 10vh;
+}
+
+h3.subtitle {
+  font-size: 2rem;
+  margin-bottom: 3vh;
+  margin-top: 5vh;
+}
