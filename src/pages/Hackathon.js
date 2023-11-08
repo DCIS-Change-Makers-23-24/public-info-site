@@ -117,7 +117,7 @@ export default function Hackathon() {
             </div>
           </div>
           <div className="hackathon-page-animation">
-            <img alt="Futurehack Logo" src={logo} />
+            <Illustration />
           </div>
         </div>
         <div className={styles.hackathonPage2 + " hackathon-page-2"}>
