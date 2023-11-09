@@ -120,14 +120,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* for debugging purposes */
-  border-bottom: 1px solid #000;
 }
 
 .homePage2Header {
   font-size: 3.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .homePage2Columns {
@@ -214,27 +212,36 @@
 
 
 
-@media screen and (max-width: 526px) {
+@media screen and (max-width: 546px) {
   .homePage2 {
     padding-top: 0;
-    height: 180vh;
+    height: 200vh;
   }
 }
+
+/* home page 3 */
 
 .homePage3 {
   width: 100vw;
   height: 80vh;
 
+  padding-top: 5vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+
+  /* for debugging purposes */
+  border-bottom: 1px solid #000;
 }
 
 .homePage3Header {
   margin-top: 3vw;
   font-size: 3rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .reasons {
@@ -285,6 +292,36 @@
   font-weight: bold;
 }
 
+/* ? home page 3 responsivity */
+
+@media screen and (max-width: 1039px) {
+  .reasons {
+    justify-content: center !important;
+  }
+}
+
+
+@media screen and (max-width: 769px) {
+  .homePage3 {
+    height: 100vh;
+  }
+}
+
+
+@media screen and (max-width: 504px) {
+  .homePage3 {
+    height: 180vh;
+  }
+}
+
+
+@media screen and (max-width: 468px) {
+  .homePage3Header {
+    font-size: 2.5rem;
+  }
+}
+
+/* home page 4 */
 
 .homePage4 {
   width: 100vw;
