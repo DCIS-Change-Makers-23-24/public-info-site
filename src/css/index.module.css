@@ -120,6 +120,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* for debugging purposes */
+  border-bottom: 1px solid #000;
 }
 
 .homePage2Header {
@@ -136,7 +139,7 @@
   height: 80%;
   width: 80%;
 
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 
@@ -146,6 +149,76 @@
   justify-content: flex-start;
 
   width: 45%;
+}
+
+
+/* ? home page 2 responsivity */
+
+@media screen and (max-width: 1125px) {
+  .homePage2 {
+    height: 100vh;
+  }
+}
+
+
+@media screen and (max-width: 915px) {
+  .homePage2Header {
+    font-size: 2.5rem;
+  }
+
+  .homePage2Column {
+    width: 47%;
+  }
+}
+
+
+@media screen and (max-width: 860px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 120vh;
+  }
+
+  .homePage2Columns {
+    flex-direction: column;
+    height: 80%;
+  }
+
+  .homePage2Column {
+    width: 96%;
+  }
+}
+
+
+@media screen and (max-width: 860px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 130vh;
+  }
+
+  .homePage2Columns {
+    flex-direction: column;
+  }
+
+  .homePage2Column {
+    width: 96%;
+  }
+}
+
+
+@media screen and (max-width: 671px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 160vh;
+  }
+}
+
+
+
+@media screen and (max-width: 526px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 180vh;
+  }
 }
 
 .homePage3 {
@@ -159,6 +232,7 @@
 }
 
 .homePage3Header {
+  margin-top: 3vw;
   font-size: 3rem;
   font-weight: bold;
 }
