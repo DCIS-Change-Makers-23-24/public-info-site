@@ -63,7 +63,6 @@ export default function Hackathon() {
           trigger: element.querySelector(".hackathon-page-2"),
           start: "top 20%",
           end: "bottom bottom",
-          toggleActions: "play none none reverse",
         }
       })
     }, ref)
@@ -89,7 +88,6 @@ export default function Hackathon() {
           trigger: element.querySelector(".hackathon-page-3"),
           start: "top 20%",
           end: "bottom bottom",
-          toggleActions: "play none none reverse",
         }
       })
     }, ref)
