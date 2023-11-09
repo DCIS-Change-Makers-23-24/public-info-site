@@ -1,7 +1,5 @@
 # Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
-
 Note: we're using NPM 
 
 Not YARN or pnpm
