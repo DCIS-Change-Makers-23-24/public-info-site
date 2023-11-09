@@ -1,6 +1,9 @@
 .homePage {
   width: 100vw;
+  padding-right: 14px;
 }
+
+/* page 1 */
 
 .homePage1 {
   width: 100vw;
@@ -10,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-right: 14px;
 }
 
 .homePage1Overlay {
@@ -31,12 +35,16 @@
   font-size: 3rem;
   color: white;
   z-index: 3;
+  text-align: center;
+  width: 80%;
 }
 
 .homePage1Desc {
   font-size: 1.7rem;
   color: white;
   z-index: 3;
+  text-align: center;
+  width: 80%;
 }
 
 .homePage1BottomBar {
@@ -72,6 +80,35 @@
 .homePage1BottomBarButton:hover {
   background-color: #0000008b;
 }
+
+/* ? home page 1 responsivity */
+
+@media screen and (max-width: 1125px) {
+  .homePage1Header {
+    font-size: 2rem;
+  }
+
+  .homePage1Desc {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media screen and (max-width: 816px) {
+  .homePage1BottomBarButton {
+    width: 45%;
+  }
+}
+
+
+@media screen and (max-width: 596px) {
+  .homePage1BottomBarButton {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* home page 2 */
 
 .homePage2 {
   width: 100vw;
