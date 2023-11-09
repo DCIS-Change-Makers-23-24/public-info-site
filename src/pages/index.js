@@ -18,125 +18,125 @@ export default function Home() {
   const history = useHistory();
   const ref = useRef(null)
 
-  // // landing page animations
-  // useLayoutEffect(() => {
-  //   const element = ref.current;
+  // landing page animations
+  useLayoutEffect(() => {
+    const element = ref.current;
 
-  //   const ctx = gsap.context(() => {
-  //     gsap.fromTo(element.querySelectorAll(".home-page-1-anim"), {
-  //       y: -20,
-  //       opacity: 0,
-  //     }, {
-  //       y: 0,
-  //       opacity: 1,
-  //       duration: 1,
-  //       stagger: 0.3
-  //     })
-  //   }, ref)
+    const ctx = gsap.context(() => {
+      gsap.fromTo(element.querySelectorAll(".home-page-1-anim"), {
+        y: -20,
+        opacity: 0,
+      }, {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.3
+      })
+    }, ref)
 
-  //   return () => ctx.revert()
-  // }, [])
+    return () => ctx.revert()
+  }, [])
 
-  // // page 2
-  // useLayoutEffect(() => {
-  //   const element = ref.current;
+  // page 2
+  useLayoutEffect(() => {
+    const element = ref.current;
 
-  //   const ctx = gsap.context(() => {
-  //     gsap.fromTo(element.querySelectorAll(".home-page-2-anim"), {
-  //       y: 20,
-  //       opacity: 0,
-  //     }, {
-  //       y: 0,
-  //       opacity: 1,
-  //       duration: 1,
-  //       stagger: 0.3,
-  //       scrollTrigger: {
-  //         start: 'top top',
-  //         end: 'bottom bottom',
-  //         trigger: element.querySelector('.home-page-2'),
-  //         toggleActions: "play none none reverse",
-  //       }
-  //     })
-  //   }, ref)
+    const ctx = gsap.context(() => {
+      gsap.fromTo(element.querySelectorAll(".home-page-2-anim"), {
+        y: 20,
+        opacity: 0,
+      }, {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          start: 'top top',
+          end: 'bottom bottom',
+          trigger: element.querySelector('.home-page-2'),
+          toggleActions: "play none none reverse",
+        }
+      })
+    }, ref)
 
-  //   return () => ctx.revert()
-  // }, [])
+    return () => ctx.revert()
+  }, [])
 
 
-  // // page 3
-  // useLayoutEffect(() => {
-  //   const element = ref.current;
+  // page 3
+  useLayoutEffect(() => {
+    const element = ref.current;
 
-  //   const ctx = gsap.context(() => {
-  //     gsap.fromTo(element.querySelectorAll(".home-page-3-anim"), {
-  //       y: 20,
-  //       opacity: 0,
-  //     }, {
-  //       y: 0,
-  //       opacity: 1,
-  //       duration: 1,
-  //       stagger: 0.3,
-  //       scrollTrigger: {
-  //         start: 'top 20%',
-  //         end: 'bottom bottom',
-  //         trigger: element.querySelector('.home-page-3'),
-  //         toggleActions: "play none none reverse",
-  //       }
-  //     })
-  //   }, ref)
+    const ctx = gsap.context(() => {
+      gsap.fromTo(element.querySelectorAll(".home-page-3-anim"), {
+        y: 20,
+        opacity: 0,
+      }, {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          start: 'top 20%',
+          end: 'bottom bottom',
+          trigger: element.querySelector('.home-page-3'),
+          toggleActions: "play none none reverse",
+        }
+      })
+    }, ref)
 
-  //   return () => ctx.revert()
-  // }, [])
+    return () => ctx.revert()
+  }, [])
 
-  // // page 4
-  // useLayoutEffect(() => {
-  //   const element = ref.current;
+  // page 4
+  useLayoutEffect(() => {
+    const element = ref.current;
 
-  //   const ctx = gsap.context(() => {
-  //     gsap.fromTo(element.querySelectorAll(".home-page-4-anim"), {
-  //       x: 20,
-  //       opacity: 0,
-  //     }, {
-  //       x: 0,
-  //       opacity: 1,
-  //       duration: 1,
-  //       stagger: 0.3,
-  //       scrollTrigger: {
-  //         start: 'top 30%',
-  //         end: 'bottom bottom',
-  //         trigger: element.querySelector('.home-page-4'),
-  //         toggleActions: "play none none reverse",
-  //       }
-  //     })
-  //   }, ref)
+    const ctx = gsap.context(() => {
+      gsap.fromTo(element.querySelectorAll(".home-page-4-anim"), {
+        x: 20,
+        opacity: 0,
+      }, {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          start: 'top 30%',
+          end: 'bottom bottom',
+          trigger: element.querySelector('.home-page-4'),
+          toggleActions: "play none none reverse",
+        }
+      })
+    }, ref)
 
-  //   return () => ctx.revert()
-  // }, [])
+    return () => ctx.revert()
+  }, [])
 
-  // // page 5
-  // useLayoutEffect(() => {
-  //   const element = ref.current;
+  // page 5
+  useLayoutEffect(() => {
+    const element = ref.current;
 
-  //   const ctx = gsap.context(() => {
-  //     gsap.fromTo(element.querySelectorAll(".home-page-5-anim"), {
-  //       x: -20,
-  //       opacity: 0,
-  //     }, {
-  //       x: 0,
-  //       opacity: 1,
-  //       duration: 1,
-  //       stagger: 0.3,
-  //       scrollTrigger: {
-  //         start: 'top 30%',
-  //         end: 'bottom bottom',
-  //         trigger: element.querySelector('.home-page-5'),
-  //         toggleActions: "play none none reverse",
-  //       }
-  //     })
-  //   }, ref)
+    const ctx = gsap.context(() => {
+      gsap.fromTo(element.querySelectorAll(".home-page-5-anim"), {
+        x: -20,
+        opacity: 0,
+      }, {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          start: 'top 30%',
+          end: 'bottom bottom',
+          trigger: element.querySelector('.home-page-5'),
+          toggleActions: "play none none reverse",
+        }
+      })
+    }, ref)
 
-  //   return () => ctx.revert()
-  // }, [])
+    return () => ctx.revert()
+  }, [])
 
   return (
     <Layout

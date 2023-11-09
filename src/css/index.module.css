@@ -121,9 +121,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* debugging purposes */
-  border-bottom: 1px solid #000;
 }
 
 .homePage2Header {
@@ -265,10 +262,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-
-  /* for debugging purposes */
-  border-bottom: 1px solid #000;
 }
 
 .homePage3Header {
@@ -365,9 +358,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
-  /* for debugging purposes */
-  border-bottom: 1px solid #000;
 }
 
 .homePage4Header {
@@ -441,9 +431,6 @@
   justify-content: space-around;
   align-items: center;
   padding-right: 14px;
-
-  /* for debugging purposes */
-  border-bottom: 1px solid #000;
 }
 
 .homePage5Header {
