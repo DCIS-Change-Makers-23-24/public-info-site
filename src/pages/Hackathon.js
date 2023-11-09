@@ -14,14 +14,16 @@ import { useHistory } from "@docusaurus/router";
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger.js';
 
-// imgs
+// imgs (keep logo for future use)
 import logo from '../../static/img/futurehack-logo.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Hackathon() {
-  const history = useHistory()
-  const ref = useRef(null)
+  const history = useHistory();
+
+  // base of animations
+  const ref = useRef(null);
 
   // landing page animations
 
@@ -38,9 +40,9 @@ export default function Hackathon() {
         duration: 1,
         stagger: 0.6
       })
-    }, ref)
+    }, ref);
 
-    return () => ctx.revert()
+    return () => ctx.revert();
   }, [])
 
   // page 2 animations
