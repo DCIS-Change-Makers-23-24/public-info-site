@@ -199,10 +199,49 @@
 
 
 
-@media screen and (max-width: 546px) {
+@media screen and (max-width: 555px) {
   .homePage2 {
     padding-top: 0;
     height: 200vh;
+  }
+}
+
+
+
+@media screen and (max-width: 441px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 240vh;
+  }
+
+  .homePage2Header {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 383px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 270vh;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 300vh;
+  }
+
+  .homePage2Header {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 304px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 330vh;
   }
 }
 
@@ -330,6 +369,10 @@
   width: 40%;
 }
 
+/* ? home page 4 responsiveness */
+
+
+/* home page 5 */
 
 .homePage5 {
   width: 100vw;
@@ -358,3 +401,5 @@
   margin-top: 8px;
   color: white;
 }
+
+/* ? home page 5 responsiveness */
