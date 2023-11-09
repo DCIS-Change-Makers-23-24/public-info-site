@@ -31,6 +31,9 @@ export default function Hackathon() {
     const element = ref.current;
 
     const ctx = gsap.context(() => {
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
       gsap.fromTo(element.querySelectorAll(".hackathon-page-1-anim"), {
         y: -20,
         opacity: 0,
@@ -40,6 +43,7 @@ export default function Hackathon() {
         duration: 1,
         stagger: 0.6
       })
+    })
     }, ref);
 
     return () => ctx.revert();
@@ -51,6 +55,9 @@ export default function Hackathon() {
     const element = ref.current;
 
     const ctx = gsap.context(() => {
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
       gsap.fromTo(element.querySelectorAll(".hackathon-page-2-anim"), {
         x: -20,
         opacity: 0,
@@ -65,6 +72,7 @@ export default function Hackathon() {
           end: "bottom bottom",
         }
       })
+    })
     }, ref)
 
     return () => ctx.revert()
@@ -76,6 +84,9 @@ export default function Hackathon() {
     const element = ref.current;
 
     const ctx = gsap.context(() => {
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
       gsap.fromTo(element.querySelectorAll(".hackathon-page-3-anim"), {
         x: 20,
         opacity: 0,
@@ -90,6 +101,7 @@ export default function Hackathon() {
           end: "bottom bottom",
         }
       })
+    })
     }, ref)
 
     return () => ctx.revert()

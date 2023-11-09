@@ -35,16 +35,20 @@ export default function Home() {
     // So don't remove the query selectors
 
     const ctx = gsap.context(() => {
-      gsap.fromTo(element.querySelectorAll(".home-page-1-anim"), {
-        y: -20,
-        opacity: 0,
-      }, {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.3
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
+        gsap.fromTo(element.querySelectorAll(".home-page-1-anim"), {
+          y: -20,
+          opacity: 0,
+        }, {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.3
+        });
       })
-    }, ref)
+    }, ref);
 
     return () => ctx.revert()
   }, [])
@@ -54,20 +58,25 @@ export default function Home() {
     const element = ref.current;
 
     const ctx = gsap.context(() => {
-      gsap.fromTo(element.querySelectorAll(".home-page-2-anim"), {
-        y: 20,
-        opacity: 0,
-      }, {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.3,
-        scrollTrigger: {
-          start: 'top top',
-          end: 'bottom bottom',
-          trigger: element.querySelector('.home-page-2'),
-        }
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
+        gsap.fromTo(element.querySelectorAll(".home-page-2-anim"), {
+          y: 20,
+          opacity: 0,
+        }, {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.3,
+          scrollTrigger: {
+            start: 'top top',
+            end: 'bottom bottom',
+            trigger: element.querySelector('.home-page-2'),
+          }
+        })
       })
+      
     }, ref)
 
     return () => ctx.revert()
@@ -79,23 +88,27 @@ export default function Home() {
     const element = ref.current;
 
     const ctx = gsap.context(() => {
-      gsap.fromTo(element.querySelectorAll(".home-page-3-anim"), {
-        y: 20,
-        opacity: 0,
-      }, {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.3,
-        scrollTrigger: {
-          start: 'top 20%',
-          end: 'bottom bottom',
-          trigger: element.querySelector('.home-page-3'),
-        }
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
+        gsap.fromTo(element.querySelectorAll(".home-page-3-anim"), {
+          y: 20,
+          opacity: 0,
+        }, {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.3,
+          scrollTrigger: {
+            start: 'top 20%',
+            end: 'bottom bottom',
+            trigger: element.querySelector('.home-page-3'),
+          }
+        })
       })
     }, ref)
 
-    return () => ctx.revert()
+    return () => ctx.revert();
   }, [])
 
   // page 4
@@ -103,6 +116,9 @@ export default function Home() {
     const element = ref.current;
 
     const ctx = gsap.context(() => {
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
       gsap.fromTo(element.querySelectorAll(".home-page-4-anim"), {
         x: 20,
         opacity: 0,
@@ -117,6 +133,7 @@ export default function Home() {
           trigger: element.querySelector('.home-page-4'),
         }
       })
+    })
     }, ref)
 
     return () => ctx.revert()
@@ -127,6 +144,9 @@ export default function Home() {
     const element = ref.current;
 
     const ctx = gsap.context(() => {
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
       gsap.fromTo(element.querySelectorAll(".home-page-5-anim"), {
         x: -20,
         opacity: 0,
@@ -140,6 +160,7 @@ export default function Home() {
           end: 'bottom bottom',
           trigger: element.querySelector('.home-page-5'),
         }
+      })
       })
     }, ref)
 
