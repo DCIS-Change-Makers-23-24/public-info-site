@@ -89,19 +89,38 @@
 @media screen and (max-width: 1013px) {
   .hackathonPage1TextContainer {
     align-items: center;
+    width: 80%;
   }
 
   .hackathonPage1Header {
     font-size: 3.5rem;
+    text-align: center;
   }
 
   .hackathonPage1Desc {
     font-size: 1.7rem;
+    text-align: center;
   }
 
   .hackathonPage1Button {
     font-size: 16px;
     padding: 16px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .hackathonPage1Header {
+    font-size: 2.5rem;
+  }
+
+  .hackathonPage1Desc {
+    font-size: 1.2rem;
+  }
+
+  .hackathonPage1Button {
+    font-size: 14px;
+    padding: 12px;
   }
 }
 
