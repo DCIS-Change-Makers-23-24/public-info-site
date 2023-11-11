@@ -17,6 +17,8 @@
   box-shadow: rgba(90, 151, 216, 0.8) 0 0 50px 20px;
   overflow-y: scroll;
   overflow-x: scroll;
+
+  min-width: 375px;
 }
 
 .hackathon-page-animation .screen .title-container {
