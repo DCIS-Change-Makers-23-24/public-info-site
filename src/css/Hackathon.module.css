@@ -12,6 +12,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+
+  /* for debugging purposes */
+  border-bottom: 1px solid #000;
 }
 
 .hackathonPage1TextContainer {
@@ -68,6 +71,9 @@
   justify-content: space-evenly;
 
   padding-top: 5vw;
+
+  /* for debugging purposes */
+  border-bottom: 1px solid #000;
 }
 
 .hackathonPage2 p {
@@ -89,6 +95,9 @@
   padding-top: 5vw;
 
   font-size: 18px;
+
+  /* for debugging purposes */
+  border-bottom: 1px solid #000;
 }
 
 .title {
@@ -105,6 +114,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  /* for debugging purposes */
+  border-bottom: 1px solid #000;
 }
 
 .parentColumn {

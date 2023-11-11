@@ -25,99 +25,99 @@ export default function Hackathon() {
   // base of animations
   const ref = useRef(null);
 
-  // landing page animations
+  // // landing page animations
 
-  useLayoutEffect(() => {
-    const element = ref.current;
+  // useLayoutEffect(() => {
+  //   const element = ref.current;
 
-    const ctx = gsap.context(() => {
-      let mm = gsap.matchMedia();
+  //   const ctx = gsap.context(() => {
+  //     let mm = gsap.matchMedia();
 
-      mm.add("(min-width: 500px)", () => {
-        gsap.fromTo(
-          element.querySelectorAll(".hackathon-page-1-anim"),
-          {
-            y: -20,
-            opacity: 0,
-          },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            stagger: 0.6,
-          }
-        );
-      });
-    }, ref);
+  //     mm.add("(min-width: 500px)", () => {
+  //       gsap.fromTo(
+  //         element.querySelectorAll(".hackathon-page-1-anim"),
+  //         {
+  //           y: -20,
+  //           opacity: 0,
+  //         },
+  //         {
+  //           y: 0,
+  //           opacity: 1,
+  //           duration: 1,
+  //           stagger: 0.6,
+  //         }
+  //       );
+  //     });
+  //   }, ref);
 
-    return () => ctx.revert();
-  }, []);
+  //   return () => ctx.revert();
+  // }, []);
 
-  // page 2 animations
+  // // page 2 animations
 
-  useLayoutEffect(() => {
-    const element = ref.current;
+  // useLayoutEffect(() => {
+  //   const element = ref.current;
 
-    const ctx = gsap.context(() => {
-      let mm = gsap.matchMedia();
+  //   const ctx = gsap.context(() => {
+  //     let mm = gsap.matchMedia();
 
-      mm.add("(min-width: 500px)", () => {
-        gsap.fromTo(
-          element.querySelectorAll(".hackathon-page-2-anim"),
-          {
-            x: -20,
-            opacity: 0,
-          },
-          {
-            x: 0,
-            opacity: 1,
-            duration: 1,
-            stagger: 0.6,
-            scrollTrigger: {
-              trigger: element.querySelector(".hackathon-page-2"),
-              start: "top 20%",
-              end: "bottom bottom",
-            },
-          }
-        );
-      });
-    }, ref);
+  //     mm.add("(min-width: 500px)", () => {
+  //       gsap.fromTo(
+  //         element.querySelectorAll(".hackathon-page-2-anim"),
+  //         {
+  //           x: -20,
+  //           opacity: 0,
+  //         },
+  //         {
+  //           x: 0,
+  //           opacity: 1,
+  //           duration: 1,
+  //           stagger: 0.6,
+  //           scrollTrigger: {
+  //             trigger: element.querySelector(".hackathon-page-2"),
+  //             start: "top 20%",
+  //             end: "bottom bottom",
+  //           },
+  //         }
+  //       );
+  //     });
+  //   }, ref);
 
-    return () => ctx.revert();
-  }, []);
+  //   return () => ctx.revert();
+  // }, []);
 
-  // page 3 animations
+  // // page 3 animations
 
-  useLayoutEffect(() => {
-    const element = ref.current;
+  // useLayoutEffect(() => {
+  //   const element = ref.current;
 
-    const ctx = gsap.context(() => {
-      let mm = gsap.matchMedia();
+  //   const ctx = gsap.context(() => {
+  //     let mm = gsap.matchMedia();
 
-      mm.add("(min-width: 500px)", () => {
-        gsap.fromTo(
-          element.querySelectorAll(".hackathon-page-3-anim"),
-          {
-            x: 20,
-            opacity: 0,
-          },
-          {
-            x: 0,
-            opacity: 1,
-            duration: 1,
-            stagger: 0.6,
-            scrollTrigger: {
-              trigger: element.querySelector(".hackathon-page-3"),
-              start: "top 20%",
-              end: "bottom bottom",
-            },
-          }
-        );
-      });
-    }, ref);
+  //     mm.add("(min-width: 500px)", () => {
+  //       gsap.fromTo(
+  //         element.querySelectorAll(".hackathon-page-3-anim"),
+  //         {
+  //           x: 20,
+  //           opacity: 0,
+  //         },
+  //         {
+  //           x: 0,
+  //           opacity: 1,
+  //           duration: 1,
+  //           stagger: 0.6,
+  //           scrollTrigger: {
+  //             trigger: element.querySelector(".hackathon-page-3"),
+  //             start: "top 20%",
+  //             end: "bottom bottom",
+  //           },
+  //         }
+  //       );
+  //     });
+  //   }, ref);
 
-    return () => ctx.revert();
-  }, []);
+  //   return () => ctx.revert();
+  // }, []);
 
   return (
     <Layout title={`FutureHack`} description="The hackathon we are hosting">
