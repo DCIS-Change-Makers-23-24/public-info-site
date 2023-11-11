@@ -1,8 +1,8 @@
-.homePage {
+.learnPage {
   width: 100vw;
 }
 
-.homePage1 {
+.learnPage1 {
   width: 100vw;
   height: 92vh;
 
@@ -12,11 +12,11 @@
   justify-content: center;
 }
 
-.homePage1 .header {
+.learnPage1 .header {
   text-align: center;
 }
 
-.homePage1 .cardContainer {
+.learnPage1 .cardContainer {
   width: 80vw;
   height: 80vh;
 
