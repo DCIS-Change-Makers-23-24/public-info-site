@@ -124,6 +124,22 @@
   }
 }
 
+@media screen and (max-width: 257px) {
+  .hackathonPage1Header {
+    font-size: 2rem;
+  }
+
+  .hackathonPage1Desc {
+    font-size: 1rem;
+  }
+
+  .hackathonPage1ButtonRow {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+  }
+}
+
 /* page 2 */
 
 .hackathonPage2 {
