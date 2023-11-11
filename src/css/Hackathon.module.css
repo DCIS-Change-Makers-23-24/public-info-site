@@ -223,9 +223,51 @@
   font-weight: bold;
   font-size: 3rem;
   margin-bottom: 10vh;
+  text-align: center;
 }
 
 /* ? home page 3 media queries */
+
+@media screen and (max-width: 1260px) {
+  .hackathonPage3 {
+    height: 80vh;
+  }
+
+  .hackathonPage3 .title {
+    font-size: 2.5rem;
+  }
+
+  .hackathonPage3 ul {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .hackathonPage3 .title {
+    font-size: 2rem;
+  }
+
+  .hackathonPage3 ul {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .hackathonPage3 {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .hackathonPage3 {
+    height: 120vh;
+  }
+
+  .hackathonPage3 .title {
+    font-size: 1.7rem;
+    width: 80%;
+  }
+}
 
 /* page 4 */
 
