@@ -1,3 +1,5 @@
+/* page 1 */
+
 .hackathonPage {
   width: 100vw;
 }
@@ -59,6 +61,10 @@
   transition: all 0.25s;
 }
 
+/* ? home page 1 media queries */
+
+/* page 2 */
+
 .hackathonPage2 {
   width: 100vw;
   height: 60vh;
@@ -80,6 +86,10 @@
   width: 50%;
   font-size: 18px;
 }
+
+/* ? home page 2 media queries */
+
+/* page 3 */
 
 .hackathonPage3 {
   width: 100vw;
@@ -105,6 +115,10 @@
   font-size: 3rem;
   margin-bottom: 10vh;
 }
+
+/* ? home page 3 media queries */
+
+/* page 4 */
 
 .hackathonPage4 {
   width: 100vw;
@@ -149,3 +163,5 @@ h3.subtitle {
   margin-bottom: 3vh;
   margin-top: 5vh;
 }
+
+/* ? home page 4 media queries */
