@@ -14,13 +14,8 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
-  supportSidebar: [
-    'support/how-to-join',
-    'support/get-help'
-  ],
-  adminSidebar: [
-    'admin/getting-started'
-  ]
+  supportSidebar: ["support/how-to-join", "support/get-help"],
+  adminSidebar: ["admin/getting-started"],
 
   // But you can create a sidebar manually
   /*
