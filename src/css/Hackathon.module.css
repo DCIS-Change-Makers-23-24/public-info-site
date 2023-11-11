@@ -315,6 +315,10 @@ h3.subtitle {
   margin-top: 5vh;
 }
 
+.subtitle {
+  text-align: center;
+}
+
 /* ? home page 4 media queries */
 
 @media screen and (max-width: 1149px) {
@@ -337,5 +341,43 @@ h3.subtitle {
 
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .hackathonPage4 h2.subtitle {
+    font-size: 2rem;
+  }
+
+  .hackathonPage4 h3.subtitle {
+    font-size: 1.5rem;
+  }
+
+  .parentColumn,
+  .childColumn {
+    width: 80%;
+  }
+
+  .parentColumn {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 403px) {
+  .hackathonPage4 {
+    height: 130vh;
+  }
+
+  .hackathonPage4 h3.subtitle {
+    font-size: 1.5rem;
+  }
+
+  .parentColumn,
+  .childColumn {
+    width: 80%;
+  }
+
+  .parentColumn {
+    text-align: center;
   }
 }
