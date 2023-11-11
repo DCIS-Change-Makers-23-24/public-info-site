@@ -269,6 +269,30 @@
   }
 }
 
+@media screen and (max-width: 386px) {
+  .hackathonPage3 {
+    height: 140vh;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .hackathonPage3 {
+    height: 160vh;
+  }
+}
+
+@media screen and (max-width: 283px) {
+  .hackathonPage3 {
+    height: 180vh;
+  }
+}
+
+@media screen and (max-width: 259px) {
+  .hackathonPage3 {
+    height: 220vh;
+  }
+}
+
 /* page 4 */
 
 .hackathonPage4 {
