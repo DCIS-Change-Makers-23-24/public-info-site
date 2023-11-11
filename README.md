@@ -1,10 +1,11 @@
 # Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
-
 Note: we're using NPM 
 
 Not YARN or pnpm
+
+## Committing.
+From now on the procedure would be to make a fork, commit then make a pull request to the main repo
 
 ### ReadMe/GH Commit Tags:
 
@@ -26,5 +27,3 @@ Not YARN or pnpm
 - [FIX] - Fix an existing issue or bug
   - Example: [FIX] Fix the form validation error that prevents users from submitting the form.
 
-- [SK] - Skill issue, indicating a temporary workaround or duct-taped fix
-  - Example: [SK] Temporary fix for the database connection issue until a permanent solution is implemented.
