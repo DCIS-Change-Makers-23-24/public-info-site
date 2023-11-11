@@ -198,6 +198,32 @@
   }
 }
 
+@media screen and (max-width: 383px) {
+  .hackathonPage2 .title {
+    font-size: 1.5rem;
+  }
+
+  .hackathonPage2 p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  .hackathonPage2 {
+    height: 120vh;
+  }
+
+  .hackathonPage2 .title {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 237px) {
+  .hackathonPage2 {
+    height: 140vh;
+  }
+}
+
 /* page 3 */
 
 .hackathonPage3 {
