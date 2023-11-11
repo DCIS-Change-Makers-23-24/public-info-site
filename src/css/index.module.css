@@ -452,6 +452,11 @@
   width: 40%;
 }
 
+.homePage5Content > ul {
+    padding-left: 0;
+
+}
+
 .homePage5Content > ul > li {
   padding: 8px 8px 8px 16px;
   border-radius: 12px;
@@ -478,6 +483,16 @@
 
   .homePage5Content {
     width: 90%;
+    text-align: center;
+  }
+
+  .homePage5Content li {
+    list-style: none;
+    padding-top: 4px;
+  }
+
+  .homePage5Content > ul > ul {
+    padding-left: 0;
   }
 }
 
