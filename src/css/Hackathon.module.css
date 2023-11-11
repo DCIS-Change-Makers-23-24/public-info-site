@@ -1,3 +1,5 @@
+/* page 1 */
+
 .hackathonPage {
   width: 100vw;
 }
@@ -49,12 +51,93 @@
   font-family: var(--ifm-heading-font-family);
   font-size: 16px;
   font-weight: bold;
-  
+
   margin-right: 1vw;
 
   cursor: pointer;
   transition: all 0.25s;
 }
+
+/* ? home page 1 media queries */
+
+@media screen and (max-width: 1230px) {
+  .hackathonPage1Header {
+    font-size: 2rem;
+  }
+
+  .hackathonPage1Desc {
+    font-size: 1.2rem;
+  }
+
+  .hackathonPage1Button {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 1106px) {
+  .hackathonPage1 {
+    justify-content: center;
+    gap: 3vw;
+  }
+}
+
+@media screen and (max-width: 1013px) {
+  .hackathonPage1TextContainer {
+    align-items: center;
+    width: 80%;
+  }
+
+  .hackathonPage1Header {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .hackathonPage1Desc {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .hackathonPage1Button {
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .hackathonPage1Header {
+    font-size: 2.5rem;
+  }
+
+  .hackathonPage1Desc {
+    font-size: 1.2rem;
+  }
+
+  .hackathonPage1Button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 257px) {
+  .hackathonPage1Header {
+    font-size: 2rem;
+  }
+
+  .hackathonPage1Desc {
+    font-size: 1rem;
+  }
+
+  .hackathonPage1ButtonRow {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+  }
+}
+
+/* page 2 */
 
 .hackathonPage2 {
   width: 100vw;
@@ -75,6 +158,83 @@
   font-size: 18px;
 }
 
+/* ? home page 2 media queries */
+
+@media screen and (max-width: 1285px) {
+  .hackathonPage2 {
+    height: 80vh;
+
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  .hackathonPage2 p {
+    width: 45%;
+  }
+
+  .hackathonPage2 .title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .hackathonPage2 {
+    height: 100vh;
+
+    flex-direction: column;
+    gap: 0vw;
+  }
+
+  .hackathonPage2 p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 471px) {
+  .hackathonPage2 {
+    height: 100vh;
+
+    flex-direction: column;
+    gap: 0vw;
+  }
+
+  .hackathonPage2 p {
+    font-size: 16px;
+  }
+
+  .hackathonPage2 .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .hackathonPage2 .title {
+    font-size: 1.5rem;
+  }
+
+  .hackathonPage2 p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  .hackathonPage2 {
+    height: 120vh;
+  }
+
+  .hackathonPage2 .title {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 237px) {
+  .hackathonPage2 {
+    height: 140vh;
+  }
+}
+
+/* page 3 */
 
 .hackathonPage3 {
   width: 100vw;
@@ -96,7 +256,77 @@
   font-weight: bold;
   font-size: 3rem;
   margin-bottom: 10vh;
+  text-align: center;
 }
+
+/* ? home page 3 media queries */
+
+@media screen and (max-width: 1260px) {
+  .hackathonPage3 {
+    height: 80vh;
+  }
+
+  .hackathonPage3 .title {
+    font-size: 2.5rem;
+  }
+
+  .hackathonPage3 ul {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .hackathonPage3 .title {
+    font-size: 2rem;
+  }
+
+  .hackathonPage3 ul {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .hackathonPage3 {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .hackathonPage3 {
+    height: 120vh;
+  }
+
+  .hackathonPage3 .title {
+    font-size: 1.7rem;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .hackathonPage3 {
+    height: 140vh;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .hackathonPage3 {
+    height: 160vh;
+  }
+}
+
+@media screen and (max-width: 283px) {
+  .hackathonPage3 {
+    height: 180vh;
+  }
+}
+
+@media screen and (max-width: 259px) {
+  .hackathonPage3 {
+    height: 220vh;
+  }
+}
+
+/* page 4 */
 
 .hackathonPage4 {
   width: 100vw;
@@ -137,4 +367,71 @@ h3.subtitle {
   font-size: 2rem;
   margin-bottom: 3vh;
   margin-top: 5vh;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+/* ? home page 4 media queries */
+
+@media screen and (max-width: 1149px) {
+  .hackathonPage4 {
+    height: 110vh;
+
+    flex-direction: column;
+  }
+
+  .parentColumn {
+    width: 100%;
+    height: 50%;
+
+    align-items: center;
+  }
+
+  .childColumn {
+    width: 100%;
+    height: 50%;
+
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .hackathonPage4 h2.subtitle {
+    font-size: 2rem;
+  }
+
+  .hackathonPage4 h3.subtitle {
+    font-size: 1.5rem;
+  }
+
+  .parentColumn,
+  .childColumn {
+    width: 80%;
+  }
+
+  .parentColumn {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 403px) {
+  .hackathonPage4 {
+    height: 130vh;
+  }
+
+  .hackathonPage4 h3.subtitle {
+    font-size: 1.5rem;
+  }
+
+  .parentColumn,
+  .childColumn {
+    width: 80%;
+  }
+
+  .parentColumn {
+    text-align: center;
+  }
 }
