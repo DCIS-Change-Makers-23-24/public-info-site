@@ -1,6 +1,10 @@
 .homePage {
   width: 100vw;
+  padding-right: 14px;
+  overflow-x: hidden;
 }
+
+/* page 1 */
 
 .homePage1 {
   width: 100vw;
@@ -10,7 +14,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-right: 14px;
 }
+
+/* overlay styling for the landing page image */
 
 .homePage1Overlay {
   width: 100%;
@@ -31,13 +38,19 @@
   font-size: 3rem;
   color: white;
   z-index: 3;
+  text-align: center;
+  width: 80%;
 }
 
 .homePage1Desc {
   font-size: 1.7rem;
   color: white;
   z-index: 3;
+  text-align: center;
+  width: 80%;
 }
+
+/* there is a kind of bottom-bar for the landing page */
 
 .homePage1BottomBar {
   position: absolute;
@@ -73,6 +86,35 @@
   background-color: #0000008b;
 }
 
+/* ? home page 1 responsivity */
+
+@media screen and (max-width: 1125px) {
+  .homePage1Header {
+    font-size: 2rem;
+  }
+
+  .homePage1Desc {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media screen and (max-width: 816px) {
+  .homePage1BottomBarButton {
+    width: 45%;
+  }
+}
+
+
+@media screen and (max-width: 596px) {
+  .homePage1BottomBarButton {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* home page 2 */
+
 .homePage2 {
   width: 100vw;
   height: 80vh;
@@ -88,7 +130,11 @@
 .homePage2Header {
   font-size: 3.5rem;
   font-weight: bold;
+  text-align: center;
 }
+
+/* two column layout */
+/* * will change to normal layout at breakpoint 880px */
 
 .homePage2Columns {
   display: flex;
@@ -99,7 +145,7 @@
   height: 80%;
   width: 80%;
 
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 
@@ -111,9 +157,113 @@
   width: 45%;
 }
 
+
+/* ? home page 2 responsivity */
+
+@media screen and (max-width: 1125px) {
+  .homePage2 {
+    height: 100vh;
+  }
+}
+
+
+@media screen and (max-width: 926px) {
+  .homePage2Header {
+    font-size: 2.5rem;
+  }
+
+  .homePage2Column {
+    width: 47%;
+  }
+}
+
+
+@media screen and (max-width: 880px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 120vh;
+  }
+
+  .homePage2Columns {
+    flex-direction: column;
+    height: 80%;
+  }
+
+  .homePage2Column {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 711px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 160vh;
+  }
+}
+
+
+
+@media screen and (max-width: 555px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 200vh;
+  }
+}
+
+
+
+@media screen and (max-width: 441px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 240vh;
+  }
+
+  .homePage2Header {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 383px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 270vh;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 300vh;
+  }
+
+  .homePage2Header {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 304px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 330vh;
+  }
+}
+
+
+@media screen and (max-width: 275px) {
+  .homePage2 {
+    padding-top: 0;
+    height: 370vh;
+  }
+}
+
+/* home page 3 */
+
 .homePage3 {
   width: 100vw;
   height: 80vh;
+
+  padding-top: 5vh;
 
   display: flex;
   flex-direction: column;
@@ -122,15 +272,20 @@
 }
 
 .homePage3Header {
+  margin-top: 3vw;
   font-size: 3rem;
   font-weight: bold;
+  text-align: center;
 }
+
+/* the box like reasons */
 
 .reasons {
   width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1vw;
   justify-content: space-evenly;
 
   margin-top: 10vh;
@@ -151,6 +306,8 @@
   background-color: #e15454;
 }
 
+/* * coloring */
+
 .reason:nth-child(2) {
   background-color: #e19354;
 }
@@ -163,7 +320,6 @@
   background-color: #5454e1;
 }
 
-
 .reason:nth-child(5) {
   background-color: #9154e1;
 }
@@ -173,6 +329,36 @@
   font-weight: bold;
 }
 
+/* ? home page 3 responsivity */
+
+@media screen and (max-width: 1039px) {
+  .reasons {
+    justify-content: center !important;
+  }
+}
+
+
+@media screen and (max-width: 769px) {
+  .homePage3 {
+    height: 100vh;
+  }
+}
+
+
+@media screen and (max-width: 504px) {
+  .homePage3 {
+    height: 150vh;
+  }
+}
+
+
+@media screen and (max-width: 468px) {
+  .homePage3Header {
+    font-size: 2.5rem;
+  }
+}
+
+/* home page 4 - our aims */
 
 .homePage4 {
   width: 100vw;
@@ -187,14 +373,64 @@
 .homePage4Header {
   font-size: 3.5rem;
   margin-right: 5vw;
+  width: 40%;
+  text-align: right;
 }
 
 .homePage4Content {
   font-size: 1.2rem;
-  width: 40%;
+  width: 50%;
+}
+
+/* ? home page 4 responsiveness */
+
+@media screen and (max-width: 1100px) {
+  .homePage4 {
+    height: 80vh;
+  }
 }
 
 
+@media screen and (max-width: 630px) {
+  .homePage4 {
+    flex-direction: column;
+  }
+
+  .homePage4Header {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 90%;
+  }
+
+  .homePage4Content {
+    width: 90%;
+    margin-top: 5vh;
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+  .homePage4Header {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .homePage4 {
+    padding-top: 5vh;
+    height: 100vh;
+  }
+}
+
+
+@media screen and (max-width: 245px) {
+  .homePage4 {
+    height: 120vh;
+  }
+}
+
+/* home page 5 */
 
 .homePage5 {
   width: 100vw;
@@ -204,6 +440,7 @@
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
+  padding-right: 14px;
 }
 
 .homePage5Header {
@@ -215,10 +452,58 @@
   width: 40%;
 }
 
+.homePage5Content > ul {
+    padding-left: 0;
+
+}
+
 .homePage5Content > ul > li {
   padding: 8px 8px 8px 16px;
   border-radius: 12px;
   background-color: rgb(82, 82, 82);
   list-style: none;
   margin-top: 8px;
+  color: white;
+}
+
+/* ? home page 5 responsiveness */
+
+@media screen and (max-width: 1450px) {
+  .homePage5 {
+    height: 100vh;
+  }
+}
+
+
+@media screen and (max-width: 571px) {
+  .homePage5 {
+    height: 110vh;
+    flex-direction: column;
+  }
+
+  .homePage5Content {
+    width: 90%;
+    text-align: center;
+  }
+
+  .homePage5Content li {
+    list-style: none;
+    padding-top: 4px;
+  }
+
+  .homePage5Content > ul > ul {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .homePage5Header {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .homePage5 {
+    height: 130vh;
+  }
 }

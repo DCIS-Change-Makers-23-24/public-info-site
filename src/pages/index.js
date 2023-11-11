@@ -15,24 +15,40 @@ import {ScrollTrigger} from 'gsap/dist/ScrollTrigger.js';
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
+  // for navigation
   const history = useHistory();
+  
+  // base for animations
   const ref = useRef(null)
+
+  // * animations
 
   // landing page animations
   useLayoutEffect(() => {
     const element = ref.current;
 
+    // ! NOTE
+    // I know that using query selectors seems odd with react, but it works
+    // CSS Animations are not meant to make the app re-render
+    // Which is why we aren't using 50000 refs
+    // It would be much slower, much more difficult and not work like we mean it to
+    // So don't remove the query selectors
+
     const ctx = gsap.context(() => {
-      gsap.fromTo(element.querySelectorAll(".home-page-1-anim"), {
-        y: -20,
-        opacity: 0,
-      }, {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.3
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
+        gsap.fromTo(element.querySelectorAll(".home-page-1-anim"), {
+          y: -20,
+          opacity: 0,
+        }, {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.3
+        });
       })
-    }, ref)
+    }, ref);
 
     return () => ctx.revert()
   }, [])
@@ -42,21 +58,25 @@ export default function Home() {
     const element = ref.current;
 
     const ctx = gsap.context(() => {
-      gsap.fromTo(element.querySelectorAll(".home-page-2-anim"), {
-        y: 20,
-        opacity: 0,
-      }, {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.3,
-        scrollTrigger: {
-          start: 'top top',
-          end: 'bottom bottom',
-          trigger: element.querySelector('.home-page-2'),
-          toggleActions: "play none none reverse",
-        }
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
+        gsap.fromTo(element.querySelectorAll(".home-page-2-anim"), {
+          y: 20,
+          opacity: 0,
+        }, {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.3,
+          scrollTrigger: {
+            start: 'top top',
+            end: 'bottom bottom',
+            trigger: element.querySelector('.home-page-2'),
+          }
+        })
       })
+      
     }, ref)
 
     return () => ctx.revert()
@@ -68,24 +88,27 @@ export default function Home() {
     const element = ref.current;
 
     const ctx = gsap.context(() => {
-      gsap.fromTo(element.querySelectorAll(".home-page-3-anim"), {
-        y: 20,
-        opacity: 0,
-      }, {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.3,
-        scrollTrigger: {
-          start: 'top 20%',
-          end: 'bottom bottom',
-          trigger: element.querySelector('.home-page-3'),
-          toggleActions: "play none none reverse",
-        }
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
+        gsap.fromTo(element.querySelectorAll(".home-page-3-anim"), {
+          y: 20,
+          opacity: 0,
+        }, {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.3,
+          scrollTrigger: {
+            start: 'top 20%',
+            end: 'bottom bottom',
+            trigger: element.querySelector('.home-page-3'),
+          }
+        })
       })
     }, ref)
 
-    return () => ctx.revert()
+    return () => ctx.revert();
   }, [])
 
   // page 4
@@ -93,6 +116,9 @@ export default function Home() {
     const element = ref.current;
 
     const ctx = gsap.context(() => {
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
       gsap.fromTo(element.querySelectorAll(".home-page-4-anim"), {
         x: 20,
         opacity: 0,
@@ -105,9 +131,9 @@ export default function Home() {
           start: 'top 30%',
           end: 'bottom bottom',
           trigger: element.querySelector('.home-page-4'),
-          toggleActions: "play none none reverse",
         }
       })
+    })
     }, ref)
 
     return () => ctx.revert()
@@ -118,6 +144,9 @@ export default function Home() {
     const element = ref.current;
 
     const ctx = gsap.context(() => {
+      let mm = gsap.matchMedia();
+
+      mm.add("(min-width: 500px)", () => {
       gsap.fromTo(element.querySelectorAll(".home-page-5-anim"), {
         x: -20,
         opacity: 0,
@@ -130,13 +159,17 @@ export default function Home() {
           start: 'top 30%',
           end: 'bottom bottom',
           trigger: element.querySelector('.home-page-5'),
-          toggleActions: "play none none reverse",
         }
+      })
       })
     }, ref)
 
     return () => ctx.revert()
-  }, [])
+  }, []);
+
+  // * CLASSNAMES
+  // home-page-[number]-anim are the animated components
+  // home-page-[number] refers to the home pages for the animations
 
   return (
     <Layout
@@ -144,6 +177,7 @@ export default function Home() {
       description="Home of the Nord Anglia Education Computing Association"
     >
       <main className={styles.homePage} ref={ref}>
+        {/* page 1 */}
         <div className={styles.homePage1}>
           <div className={styles.homePage1Overlay}></div>
           <h1 className={styles.homePage1Header + " home-page-1-anim"}>Nord Anglia Education Computing Association</h1>
@@ -159,8 +193,10 @@ export default function Home() {
             </button>
           </div>
         </div>
+        {/* page 2 */}
         <div className={styles.homePage2 + " home-page-2"}>
           <h1 className={styles.homePage2Header + " home-page-1-anim"}>What is the NAECA?</h1>
+          {/* 2 column layout, with each column having ~45% width */}
           <div className={styles.homePage2Columns}>
             <div className={styles.homePage2Column}>
               <p className={styles.content + " home-page-2-anim"}>
@@ -178,8 +214,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* page 3 */}
         <div className={styles.homePage3 + " home-page-3"}>
           <h1 className={styles.homePage3Header + " home-page-3-anim"}>Why the NAECA?</h1>
+          {/* these render a bunch of boxes that will contain the reasons */}
           <div className={styles.reasons}>
             <div className={styles.reason + " home-page-3-anim"}>
               <p className={styles.reasonTitle}>Lorem ipsum</p>
@@ -203,7 +241,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-         <div className={styles.homePage4 + " home-page-4"}>
+        {/* home page 4 */}
+        <div className={styles.homePage4 + " home-page-4"}>
           <h1 className={styles.homePage4Header + " home-page-4-anim"}>Our aims</h1>
           <p className={styles.homePage4Content + " home-page-4-anim"}>
             <ul>
@@ -217,8 +256,10 @@ export default function Home() {
             </ul>
           </p>
         </div>
+        {/* home page 5 */}
         <div className={styles.homePage5 + " home-page-5"}>
           <h1 className={styles.homePage5Header + " home-page-5-anim"}>What's after</h1>
+          {/* the list is rendered kind of like 'bubbles' */}
           <p className={styles.homePage5Content + " home-page-5-anim"}>
             <ul>
               <li>Forming Nord Anglia Education Computing Association​</li>
