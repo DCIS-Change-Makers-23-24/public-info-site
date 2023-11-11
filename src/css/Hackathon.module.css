@@ -150,6 +150,54 @@
 
 /* ? home page 2 media queries */
 
+@media screen and (max-width: 1285px) {
+  .hackathonPage2 {
+    height: 80vh;
+
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  .hackathonPage2 p {
+    width: 45%;
+  }
+
+  .hackathonPage2 .title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .hackathonPage2 {
+    height: 100vh;
+
+    flex-direction: column;
+    gap: 0vw;
+  }
+
+  .hackathonPage2 p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 471px) {
+  .hackathonPage2 {
+    height: 100vh;
+
+    flex-direction: column;
+    gap: 0vw;
+  }
+
+  .hackathonPage2 p {
+    font-size: 16px;
+  }
+
+  .hackathonPage2 .title {
+    font-size: 2rem;
+  }
+}
+
 /* page 3 */
 
 .hackathonPage3 {
