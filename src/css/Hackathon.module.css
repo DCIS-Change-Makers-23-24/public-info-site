@@ -316,3 +316,26 @@ h3.subtitle {
 }
 
 /* ? home page 4 media queries */
+
+@media screen and (max-width: 1149px) {
+  .hackathonPage4 {
+    height: 110vh;
+
+    flex-direction: column;
+  }
+
+  .parentColumn {
+    width: 100%;
+    height: 50%;
+
+    align-items: center;
+  }
+
+  .childColumn {
+    width: 100%;
+    height: 50%;
+
+    justify-content: center;
+    align-items: center;
+  }
+}
