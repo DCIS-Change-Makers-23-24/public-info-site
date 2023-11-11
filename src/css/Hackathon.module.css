@@ -79,6 +79,32 @@
   }
 }
 
+@media screen and (max-width: 1106px) {
+  .hackathonPage1 {
+    justify-content: center;
+    gap: 3vw;
+  }
+}
+
+@media screen and (max-width: 1013px) {
+  .hackathonPage1TextContainer {
+    align-items: center;
+  }
+
+  .hackathonPage1Header {
+    font-size: 3.5rem;
+  }
+
+  .hackathonPage1Desc {
+    font-size: 1.7rem;
+  }
+
+  .hackathonPage1Button {
+    font-size: 16px;
+    padding: 16px;
+  }
+}
+
 /* page 2 */
 
 .hackathonPage2 {

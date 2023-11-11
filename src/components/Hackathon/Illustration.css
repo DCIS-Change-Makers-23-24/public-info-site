@@ -86,3 +86,11 @@
 .bold {
   font-weight: bold;
 }
+
+/* ? media queries */
+
+@media screen and (max-width: 1013px) {
+  .hackathon-page-animation {
+    display: none;
+  }
+}
