@@ -27,11 +27,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../../static/img/DCIS_Campus.jpg');
+  background-image: url("../../static/img/DCIS_Campus.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  filter: brightness(0.5)
+  filter: brightness(0.5);
 }
 
 .homePage1Header {
@@ -98,20 +98,17 @@
   }
 }
 
-
 @media screen and (max-width: 816px) {
   .homePage1BottomBarButton {
     width: 45%;
   }
 }
 
-
 @media screen and (max-width: 596px) {
   .homePage1BottomBarButton {
     font-size: 1.3rem;
   }
 }
-
 
 /* home page 2 */
 
@@ -148,7 +145,6 @@
   margin-top: 5vh;
 }
 
-
 .homePage2Column {
   display: flex;
   flex-direction: column;
@@ -157,7 +153,6 @@
   width: 45%;
 }
 
-
 /* ? home page 2 responsivity */
 
 @media screen and (max-width: 1125px) {
@@ -165,7 +160,6 @@
     height: 100vh;
   }
 }
-
 
 @media screen and (max-width: 926px) {
   .homePage2Header {
@@ -176,7 +170,6 @@
     width: 47%;
   }
 }
-
 
 @media screen and (max-width: 880px) {
   .homePage2 {
@@ -201,16 +194,12 @@
   }
 }
 
-
-
 @media screen and (max-width: 555px) {
   .homePage2 {
     padding-top: 0;
     height: 200vh;
   }
 }
-
-
 
 @media screen and (max-width: 441px) {
   .homePage2 {
@@ -222,7 +211,6 @@
     font-size: 2rem;
   }
 }
-
 
 @media screen and (max-width: 383px) {
   .homePage2 {
@@ -248,7 +236,6 @@
     height: 330vh;
   }
 }
-
 
 @media screen and (max-width: 275px) {
   .homePage2 {
@@ -337,20 +324,17 @@
   }
 }
 
-
 @media screen and (max-width: 769px) {
   .homePage3 {
     height: 100vh;
   }
 }
 
-
 @media screen and (max-width: 504px) {
   .homePage3 {
     height: 150vh;
   }
 }
-
 
 @media screen and (max-width: 468px) {
   .homePage3Header {
@@ -390,7 +374,6 @@
   }
 }
 
-
 @media screen and (max-width: 630px) {
   .homePage4 {
     flex-direction: column;
@@ -408,13 +391,11 @@
   }
 }
 
-
 @media screen and (max-width: 430px) {
   .homePage4Header {
     font-size: 2rem;
   }
 }
-
 
 @media screen and (max-width: 320px) {
   .homePage4 {
@@ -422,7 +403,6 @@
     height: 100vh;
   }
 }
-
 
 @media screen and (max-width: 245px) {
   .homePage4 {
@@ -453,8 +433,7 @@
 }
 
 .homePage5Content > ul {
-    padding-left: 0;
-
+  padding-left: 0;
 }
 
 .homePage5Content > ul > li {
@@ -473,7 +452,6 @@
     height: 100vh;
   }
 }
-
 
 @media screen and (max-width: 571px) {
   .homePage5 {

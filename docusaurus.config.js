@@ -4,61 +4,62 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
-import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/dist/ScrollTrigger.js';
+import { themes as prismThemes } from "prism-react-renderer";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Nord Anglia Education Computing Association',
-  tagline: 'Bringing the change thats needed',
-  favicon: 'img/favicon.ico',
+  title: "Nord Anglia Education Computing Association",
+  tagline: "Bringing the change thats needed",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: "https://your-docusaurus-site.example.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'DCIS-Change-Makers-23-24', // Usually your GitHub org/user name.
-  projectName: 'public-info-site', // Usually your repo name.
+  organizationName: "DCIS-Change-Makers-23-24", // Usually your GitHub org/user name.
+  projectName: "public-info-site", // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/DCIS-Change-Makers-23-24/public-info-site',
+            "https://github.com/DCIS-Change-Makers-23-24/public-info-site",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/DCIS-Change-Makers-23-24/public-info-site',
+            "https://github.com/DCIS-Change-Makers-23-24/public-info-site",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       }),
     ],
@@ -68,69 +69,74 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/card.png',
+      image: "img/card.png",
       navbar: {
-        title: 'Nord Anglia Education Computing Association ',
+        title: "Nord Anglia Education Computing Association ",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "My Site Logo",
+          src: "img/logo.svg",
         },
         items: [
-          {to: '/hackathon', label: 'FutureHack', position: 'left'},
+          { to: "/hackathon", label: "FutureHack", position: "left" },
           {
-            type: 'docSidebar',
-            sidebarId: 'supportSidebar',
-            position: 'left',
-            label: 'Support',
+            type: "docSidebar",
+            sidebarId: "supportSidebar",
+            position: "left",
+            label: "Support",
           },
-          {type: 'docSidebar', sidebarId: 'adminSidebar', label: 'Admin', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/https://github.com/DCIS-Change-Makers-23-24',
-            label: 'GitHub',
-            position: 'right',
+            type: "docSidebar",
+            sidebarId: "adminSidebar",
+            label: "Admin",
+            position: "left",
+          },
+          { to: "/blog", label: "Blog", position: "left" },
+          {
+            href: "https://github.com/facebook/https://github.com/DCIS-Change-Makers-23-24",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Support',
-                to: '/docs/intro',
+                label: "Support",
+                to: "/docs/intro",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Teams',
-                href: 'ww',
+                label: "Teams",
+                href: "ww",
               },
               {
-                label: 'Youtube',
-                href: 'w',
+                label: "Youtube",
+                href: "w",
               },
               {
-                label: 'SomeSite',
-                href: 'w',
+                label: "SomeSite",
+                href: "w",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "GitHub",
+                href: "https://github.com/facebook/docusaurus",
               },
             ],
           },
